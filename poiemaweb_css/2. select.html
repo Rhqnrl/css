@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- 클릭해야 목록이 보이는 select -->
+        <select name="cars1">
+            <option value="volvo" selected>Volvo</option>
+            <option value="saab" disabled>Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <!-- 클릭하지 않아도 목록(4개)이 펼쳐져있는-->
+        <select name="cars2" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+
+        <!-- 그룹 지정하여 그룹 이름 표시-->
+        <select name="cars3">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+        <!-- disabled: 선택 불가능-->    
+            <optgroup label="German Cars" disabled>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select> <br><br>
+
+
+        <fieldset>
+            <legend>Login</legend>
+            Username <input type="text" name="username">
+            Password <input type="text" name="password">
+            <input type="submit" value="submit">
+        </fieldset>
+    </body>
+
+
+</html>

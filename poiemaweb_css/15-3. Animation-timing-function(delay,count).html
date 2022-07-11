@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: blueviolet;
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            /* -webkit- : 구글/사파리 브라우저에 사용*/
+            -webkit-animation: timingFunc 3s;
+            animation: timingFunc 3s;
+            /* animation-iteration-count: infinite; */
+        }
+        /*  #div : id 값 지정, 
+            .div : class값 지정 */
+        #div_01{
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        #div_02{
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+        }
+        #div_03{
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        #div_04{
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        #div_05{
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+
+        #div_06{
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+        }
+        /*애니메이션 주기의 재생횟수 지정. 기본값1, infinite로 무한반복 가능*/
+        #div_07{
+            width: 150px;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            animation-iteration-count: 3;
+        }
+        @-webkit-keyframes timingFunc{
+            from { left: 0px; }
+            to   { left : 300px; }
+        }
+        @keyframes timingFunc{
+            from { left: 0px; }
+            to   { left: 300px; }
+        }
+
+    </style>
+</head>
+<body>
+    <h1> 애니메이션 효과의 속도 변화</h1>
+    <div id="div_01">Linear</div>
+    <div id="div_02">ease</div>
+    <div id="div_03">ease-in</div>
+    <div id="div_04">ease-out</div>
+    <div id="div_05">ease-in-out</div>
+    <div id="div_06">delay_2s</div>
+    <div id="div_07">iteration-count: 3</div>
+</body>
+</html>

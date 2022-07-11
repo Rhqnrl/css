@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        p{
+            background-color: gold;
+            padding: 10px ;
+            
+        }
+
+        p.dotted{ border-style: dotted; }
+        p.solid{ border-style: solid;}
+
+        div{
+            background: #eaeaed;
+            color: #666;
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            margin: 0 14px;
+            text-align: center;
+        }
+
+        .border-rounded{
+            /* 4꼭지점에 대해 Radius 지정*/
+            border-radius: 5px;
+        }
+        .border-circle{
+            border-radius: 50px;
+        }
+        .border-football{
+            border-radius: 15px 75px 0px 50px;
+        }
+        .border-rounded{
+            border-radius: 20px;
+        }
+
+        .content-box{
+            width: 600px;
+            border: 10px solid pink;
+            padding: 50px;
+            margin: 50px;
+            background-color: rgb(225, 174, 238);
+        }
+        .border-box {
+            box-sizing: border-box;
+            width: 600px;
+            border: 10px solid;
+            padding: 50px;
+            margin: 50px;
+            background-color: red;
+      }
+    </style>
+</head>
+<body>
+    <h2>border-style Property</h2>
+
+    <p class="dotted">dotted</p>
+    <p class="solid">solid</p>
+
+    <div class="border-rounded">5px</div>
+    <div class="border-circle">50%</div>
+    <div class="border-football">15px 75px</div>
+    <div class="border-rounded">20px</div><br>
+
+    <div class="content-box">content-box</div><br>
+    <div class="border-box">border-box</div>
+</body>
+</html>

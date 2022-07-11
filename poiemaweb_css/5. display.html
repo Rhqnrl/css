@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/*         div:nth-of-type(1){
+            background-color: rgb(168, 104, 104);
+            padding: 20px;
+            border: 20px solid pink;
+        }
+        div:nth-of-type(2){
+            background-color: rgb(160, 160, 233);
+            padding: 20px;
+            width: 300px;
+        }
+ */
+        span{
+            background-color: cadetblue;
+            color: white;
+            padding: 10px;
+            line-height: 50px;
+        }
+
+        .wrapper{
+            font-size: 0; /*요소 간 간격을 제거*/
+        }
+        .inline-block{
+            display: inline-block;
+            vertical-align: middle; /*inline-block 요소 수직 정렬 */
+            border: 3px solid salmon;
+            font-size: 16px;
+        }
+        .box1{
+            width: 300px;
+            height: 70px;
+        }
+        .box2{
+            width: 300px;
+            height: 150px;
+        }
+
+
+        .visible{ visibility: visible; }
+        .hidden{ visibility: hidden; }
+
+        table, td{ border: 1px solid black; }
+        .collapse{ visibility: collapse; }
+
+
+        ul, img{
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            background-color: aquamarine;
+            color: black;
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+        ul:hover, img:hover{
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>블록 레벨 요소</h2>
+        <p>width, height 미지정 -> width: 100%; height: auto;</p>
+    </div>
+    <div>
+        <h2>블록 레벨 요소</h2>
+        <p>width: 300px -> width: 300px; height: auto;</p>
+    </div>
+
+    <h1>My <span>Important</span> Heading</h1>
+    <span>Inline</span>
+    <span>Inline  wow    </span><span>INline</span><br>
+
+    <div class="inline-block box1">inline-block height 70px</div>
+    <div class="inline-block box2">inline-block height 150px</div>
+
+    <div class="wrapper">
+        <div class="inline-block box1">inline-block height 70px</div>
+        <div class="inline-block box2">inline-block height 150px</div>
+    </div><br>
+
+
+    <h1 class="visible">visibility: visible</h1>
+    <h1 class="hidden">visibility: hidden</h1>
+    <h1 style="display:none">display: none</h1>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr class="collapse">
+            <td>C</td> 
+            <td>D</td>
+        </tr>
+    </table>
+
+
+    <ul>opacity: 0.5</ul>
+    <img src="https://poiemaweb.com/img/doug.jpg" alt="doug">
+</body>
+</html>
